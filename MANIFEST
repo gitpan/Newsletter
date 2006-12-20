@@ -1,0 +1,17 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/Newsletter.pm
+lib/Newsletter/Html.pm
+lib/Newsletter/Html/CSS.pm
+lib/Newsletter/Html/Templ.pm
+lib/Newsletter/Html/Upload.pm
+t/00-load.t
+t/boilerplate.t
+t/pod-coverage.t
+t/pod.t
+cgi/newsletter.cgi
+cgi/My.PL
+
