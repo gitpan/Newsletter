@@ -12,6 +12,10 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
 	'MIME::Explode' => '0.38',
+	'MIME::Lite' => '3.0',
+	'File::Path' => '1.06',
+	'File::Type' => '0.22',
+	'Time::HiRes' => '1.65',
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Newsletter-*' },

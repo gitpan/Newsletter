@@ -16,7 +16,7 @@ use Exporter;
 use vars qw($VERSION @ISA @EXPORT $ERR);
 use subs qw(warn die);#die
 
-our $VERSION = '0.03';
+our $VERSION = '0.032';
 
 @ISA = qw(Exporter);
 @EXPORT = qw(
@@ -1490,15 +1490,16 @@ sub _lowSend {
 
 =head1 NAME
 
-Newsletter - A Simple website based Newsletter interface!
+Newsletter - A simple newsletter module!
 
 =head1 VERSION
 
-Version 0.03
+Version 0.031
 
 =head1 SYNOPSIS
 
-The backend module for the newsletter web interface
+The backend module for the newsletter (newsletter.cgi) web interface. This module is a BETA Version.
+Copy the newsletter.cgi to your /cgi-bin/ directory and adapt it. Maybe you have to change the paths
 
 Perhaps a little code snippet.
 
@@ -1509,10 +1510,13 @@ Perhaps a little code snippet.
 
 More docu is coming ...
 
-=head1 EXPORT
+=head1 FUNCTIONS
 
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+    template( %params )
+    list( %params )
+    body( %params )
+    sender( %params )
+    send( )
 
 =head1 EXAMPLE
 
@@ -1677,11 +1681,25 @@ if you don't export anything, such as for a purely object-oriented module.
 
 
 
+=head1 ONLINE
+
+Visit:
+
+   L<http://www.pervasive.jku.at/About_Us/Staff/Hochreiter/Newsletter>
+
+Here you can see the example script from the cgi directory working:
+
+   L<http://www.pervasive.jku.at/About_Us/Staff/Hochreiter/Newsletter/cgi/newsletter.cgi>
 
 
 =head1 AUTHOR
 
 Dominik Hochreiter, C<< <dominik at soft.uni-linz.ac.at> >>
+
+=head1 TESTS
+
+Successfully tested on Linux (Slackware 10.2) and Solaris (SunOS 5.8).
+This Module got developed for www.vienna-marathon.com
 
 =head1 BUGS
 

@@ -1,5 +1,21 @@
 #!/usr/bin/perl -w
 
+
+#
+# Here you can see this script working
+#
+
+#######################################################################################
+#										      #
+# http://www.pervasive.jku.at/About_Us/Staff/Hochreiter/Newsletter/cgi/newsletter.cgi #
+#										      #
+#######################################################################################
+
+
+
+
+
+
 use strict;
 use Newsletter;
 use Newsletter::Html;
@@ -24,12 +40,14 @@ $news->sender(
 );
 
 
-# relative paths ( access from webbrowser )?!
+# Alert !!!
+# relative paths from server root ( access from webbrowser )?!
+# use httpd.conf
+# add this to your server configuration "Alias /tmp/ /tmp/"
 
 $news->previewMailFile(
 	path => '/tmp/Newsletter/Data/preview'
 );
-
 $news->archiv(
 	path => '/tmp/Newsletter/Data/archiv'
 );
