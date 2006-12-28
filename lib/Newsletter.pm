@@ -16,7 +16,7 @@ use Exporter;
 use vars qw($VERSION @ISA @EXPORT $ERR);
 use subs qw(warn die);#die
 
-our $VERSION = '0.032';
+our $VERSION = '0.033';
 
 @ISA = qw(Exporter);
 @EXPORT = qw(
@@ -1494,7 +1494,7 @@ Newsletter - A simple newsletter module!
 
 =head1 VERSION
 
-Version 0.031
+Version 0.033
 
 =head1 SYNOPSIS
 
